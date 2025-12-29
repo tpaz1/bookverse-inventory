@@ -9,17 +9,17 @@
           # Checkout our enhanced scripts\
           curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \\\
             -H "Accept: application/vnd.github.v3.raw" \\\
-            "https://api.github.com/repos/yonatanp-jfrog/bookverse-demo-init/contents/scripts/enhanced_ci_summary.py" \\\
+            "https://api.github.com/repos/tpaz1/bookverse-demo-init/contents/scripts/enhanced_ci_summary.py" \\\
             -o enhanced_ci_summary.py\
           \
           curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \\\
             -H "Accept: application/vnd.github.v3.raw" \\\
-            "https://api.github.com/repos/yonatanp-jfrog/bookverse-demo-init/contents/scripts/handle_promotion_failure.py" \\\
+            "https://api.github.com/repos/tpaz1/bookverse-demo-init/contents/scripts/handle_promotion_failure.py" \\\
             -o handle_promotion_failure.py\
           \
           curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \\\
             -H "Accept: application/vnd.github.v3.raw" \\\
-            "https://api.github.com/repos/yonatanp-jfrog/bookverse-demo-init/contents/scripts/promotion_failure_summary.sh" \\\
+            "https://api.github.com/repos/tpaz1/bookverse-demo-init/contents/scripts/promotion_failure_summary.sh" \\\
             -o promotion_failure_summary.sh\
           \
           chmod +x enhanced_ci_summary.py handle_promotion_failure.py promotion_failure_summary.sh\
