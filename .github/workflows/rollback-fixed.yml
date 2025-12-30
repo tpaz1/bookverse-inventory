@@ -75,7 +75,7 @@ jobs:
           echo "JF_OIDC_TOKEN=$JF_OIDC_TOKEN" >> $GITHUB_ENV
 
       - name: "[Setup] JFrog CLI"
-        uses: EyalDelarea/setup-jfrog-cli@swampUpAppTrust
+        uses: jfrog/setup-jfrog-cli@v4
         with:
           version: latest
           oidc-provider-name: bookverse-inventory-github
