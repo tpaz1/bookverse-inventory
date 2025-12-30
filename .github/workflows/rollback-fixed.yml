@@ -77,7 +77,7 @@ jobs:
       - name: "[Setup] JFrog CLI"
         uses: jfrog/setup-jfrog-cli@v4
         with:
-          version: latest
+          version: 2.86.0
           oidc-provider-name: bookverse-inventory-github
           disable-job-summary: true
           oidc-audience: ${{ vars.JFROG_URL }}
