@@ -441,6 +441,11 @@ jobs:
           
           # 📦 Inventory testing: Execute database and API validation tests
           # Validates inventory CRUD operations, stock calculations, and data integrity
+          echo "🧪 Python dependencies:"
+          python -m pip list
+          python -m pip show pytest
+          python -m pip show pytest-cov
+          
           python -m pytest tests/test_simple.py -v --cov-report=xml --cov-report=term-missing
           
           # 📊 Coverage simulation: Generate inventory system coverage report
